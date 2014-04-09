@@ -1,0 +1,139 @@
+﻿BODY {
+	font:13px/1.385 arial, sans-serif;
+	background:#fff;
+	color:#000;
+	}
+
+A {
+	text-decoration:underline;
+	}
+
+.media-list {
+	}
+
+.media + .media {
+	margin-top:18px;
+	}
+
+.media-body {
+	padding-bottom:1px;
+	}
+
+.media-left {
+	float:left;
+	margin:0 10px 0 0;
+	}
+
+.media-right {
+	float:right;
+	margin:0 0 0 10px;
+	}
+
+.media-date {
+	font-size:12px;
+	color:#666;
+	display:block;
+	margin:-.25em 0 .15em;
+	}
+
+.media-title {
+	display:block;
+	font-size:14px;
+	line-height:1.43;
+	margin:0 0 .77em 0;
+	}
+.media-title:last-child {
+	margin-bottom:0 !important;
+	}	
+
+
+/* media-list-sm */
+.media-list-sm {
+	}
+	.media-list-sm .media + .media {
+		margin-top:10px;
+		}
+	.media-list-sm .media-left {
+		margin-right:5px;
+		}
+	.media-list-sm .media-right {
+		margin-left:5px;
+		}
+	.media-list-sm .media-title {
+		font-size:13px;
+		line-height:1.385;
+		margin:0 0 .7em 0;
+		}
+	.media-list-sm .media-date {
+		font-size:11px;
+		}
+
+
+/* media-list-lg */
+.media-list-lg {
+	}
+	.media-list-lg .media + .media {
+		margin-top:25px;
+		}
+	.media-list-lg .media-left {
+		margin-right:15px;
+		}
+	.media-list-lg .media-right {
+		margin-left:15px;
+		}
+	.media-list-lg .media-title {
+		font-size:18px;
+		font-weight:bold;
+		line-height:1.222;
+		margin:0 0 .89em;
+		}
+	.media-list-lg .media-date {
+		font-size:13px;
+		}
+	.media-list-lg .media-title + .b-text {
+		margin-top:-.3em;
+		}
+
+
+.main-h1 + .media-list,
+.main-h2 + .media-list,
+.main-h3 + .media-list,
+.main-h4 + .media-list,
+.main-h5 + .media-list,
+.main-h6 + .media-list {
+	margin-top:-.3em;
+	}
+
+.col-xs-side-fix-left,
+.col-xs-side-fix-right,
+.col-xs-section {
+  position:relative;
+  float:left;
+  min-height:1px;
+  padding-right:15px;
+  padding-left:15px;
+  -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+	}
+
+.col-xs-side-fix-right {
+	float:right;
+}
+
+.col-xs-side-fix-left,
+.col-xs-side-fix-right {
+	width:316px;
+	}
+
+.col-xs-side-fix-left + .col-xs-section-wrap {
+	margin-left:316px;
+	}
+
+.col-xs-side-fix-right + .col-xs-section-wrap {
+	margin-right:316px;
+	}
+
+.col-xs-section {
+	width:100%;
+	}
