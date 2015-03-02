@@ -1,0 +1,183 @@
+@import '../../variables/variables_theme_normal.styl'
+@import '../mixins.styl'
+
+.b-page_theme_normal
+  .nav-divider
+    background-color borderColorMain
+  
+  .nav
+    .small
+      font-size .86em
+      color colorTextMutedDark
+    
+    & > li > a:hover,
+    & > li > a:focus,
+    & > li > .b-pseudolnik:hover,
+    & > li > .b-pseudolink:focus
+    & > li > .must_be_href:hover,
+    & > li > .must_be_href:focus
+      color colorLinkHover
+      background-color backgroundColorHover
+    
+    & > li.disabled > a,
+    & > li.disabled > strong,
+    & > li.disabled > .b-pseudolink,
+    & > li.disabled > .must_be_href
+      color colorTextDisabled
+    
+    & > li.disabled > a:hover,
+    & > li.disabled > a:focus,
+    & > li.disabled > .b-pseudolink:hover,
+    & > li.disabled > .b-pseudolink:focus,
+    & > li.disabled > .must_be_href:hover,
+    & > li.disabled > .must_be_href:focus
+      color colorTextDisabled
+      background-color transparent
+    
+    & .open > a,
+    & .open > a:hover,
+    & .open > a:focus,
+    & .open > strong,
+    & .open > .b-pseudolink,
+    & .open > .b-pseudolink:hover,
+    & .open > .b-pseudolink:focusб
+    & .open > .must_be_href,
+    & .open > .must_be_href:hover,
+    & .open > .must_be_href:focus
+      background-color backgroundColorActive
+      border-color borderColorActive
+
+  .nav_pills
+    & > li
+      & > a,
+      & > strong
+        border 1px solid transparent
+        border-radius base_borderradius
+
+      &.active > a,
+      &.active > strong,
+      &.active > a:hover,
+      &.active > a:focus
+        border-color borderColorActive
+        color colorTextMain
+        background-color backgroundColorActive
+
+      &.active > a:hover,
+      &.active > a:focus
+        color colorLinkHover
+
+  .nav_tabs
+    border-bottom-color borderColorMain
+    
+    & > li
+      & > a,
+      & > strong
+        background-color backgroundColorMainHover
+        border 1px solid borderColorMain
+        border-radius base_borderradius base_borderradius 0 0
+      
+      & > a:hover
+        background-color backgroundColorMainHover
+        border 1px solid borderColorMain
+        color colorLinkHover
+      
+      &.active > a,
+      &.active > strong,
+      &.active > a:hover,
+      &.active > a:focus
+        color colorTextMain
+        background-color backgroundColorMain
+        border 1px solid borderColorMain
+        border-bottom-color transparent
+
+  .nav_tabs.nav_justified > li > a,
+  .nav_tabs.nav_justified > li > strong
+    border-radius base_borderradius
+    border-bottom 1px solid borderColorMain
+    border-radius base_borderradius base_borderradius 0 0
+
+  .nav_tabs.nav_justified > .active > a,
+  .nav_tabs.nav_justified > .active > strong,
+  .nav_tabs.nav_justified > .active > a:hover,
+  .nav_tabs.nav_justified > .active > a:focus
+    border 1px solid borderColorMain
+    border-bottom-color backgroundColorMain
+
+  .nav_tabs_justified
+    & > li > a,
+    & > li > strong
+      border-radius base_borderradius
+      border-bottom-color borderColorMain
+      border-radius base_borderradius base_borderradius 0 0
+    
+    & > .active > a,
+    & > .active > strong,
+    & > .active > a:hover,
+    & > .active > a:focus
+      border-color borderColorMain
+      border-bottom-color backgroundColorMain
+
+navSize('sm', 'normal', sm_padding_topbottom, sm_padding_leftright, sm_fontsize, sm_lineheight, sm_height)
+navSize('md', 'normal', md_padding_topbottom, md_padding_leftright, md_fontsize, md_lineheight, md_height)
+navSize('lg', 'normal', lg_padding_topbottom, lg_padding_leftright, lg_fontsize, lg_lineheight, lg_height)
+
+.b-page_theme_normal
+  .nav_size_lg
+    .nav_higher
+      & > li > a,
+      & > li > strong,
+      & > li > .must_be_href
+        line-height lg_lineheight_higher
+        height lg_height_higher
+        padding-top lg_padding_topbottom_higher
+        padding-bottom lg_padding_topbottom_higher
+  
+    .nav_higher2
+      & > li > a,
+      & > li > strong,
+      & > li > .must_be_href
+        line-height lg_lineheight_higher2
+        height lg_height_higher2
+        padding-top lg_padding_topbottom_higher2
+        padding-bottom lg_padding_topbottom_higher2
+
+  .nav_side
+    border 1px solid borderColorMain
+    border-radius base_borderradius
+    
+    & > li
+      border-top 1px solid borderColorMain
+
+      & > a,
+      & > strong
+        padding-left md_padding_leftright
+        padding-right md_padding_leftright
+
+      &:first-child
+        border-top none
+    
+        & > a,
+        & > strong
+            border-radius base_borderradius base_borderradius 0 0
+      
+      &:last-child
+        & > a,
+        & > strong
+            border-radius 0 0 base_borderradius base_borderradius
+
+    & .open > a,
+    & .open > a:hover,
+    & .open > a:focus,
+    & .open > strong
+      background-color transparent
+
+    & .active > a,
+    & .active > a:hover,
+    & .active > a:focus,
+    & .active > strong
+      color colorTextMain
+      background-color backgroundColorActive
+
+    & .active > a:hover,
+    & .active > a:focus
+      color colorLinkHover
